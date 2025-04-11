@@ -82,8 +82,8 @@ function App() {
               <tr key={index}>
                 <th scope="row">{index+1}</th>
                 <td>{item.name}</td>
-                <td><button className='btn btn-success' onClick={()=>editHandle(item.id,item.name)}>Edit</button></td>
-                <td><button className='btn btn-primary' onClick={()=>deleteHandle(item.id, index)}>Delete</button></td>
+                <td><button className='btn btn-success' onClick={()=>editHandle(item._id,item.name)}>Edit</button></td>
+                <td><button className='btn btn-primary' onClick={()=>deleteHandle(item._id, index)}>Delete</button></td>
               </tr>
       
       )
